@@ -1,0 +1,36 @@
+.about-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__main {
+        @include flex-custom(column, center, center);
+
+        &__text {
+            margin-top: 32px;
+            width: 1047px;
+
+            @include media-xl {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.title-black {
+    font-weight: 900;
+    font-size: 50px;
+    color: $black;
+    text-align: center;
+
+    @include media-s {
+        font-size: 40px;
+    }
+}
+
+.text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: $black;
+}

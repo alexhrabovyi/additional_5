@@ -1,0 +1,131 @@
+@import "../libs/mixins";
+@import "../libs/colors";
+
+.container {
+    padding-left: 13.54%;
+    padding-right: 13.54%;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.button {
+    width: 186px;
+    height: 56px;
+    border: none;
+    border-radius: 28px;
+    background: $white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $blue;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        outline: none;
+        background: $blue-hover;
+    }
+    
+    &:active {
+        background: $blue-active;
+    }
+}
+
+.header-wrapper {
+    @include background-cover(url(../img/header_bg.png));
+    position: relative;
+    padding-top: 179px;
+    padding-bottom: 170px;
+
+    @include media-s {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    @include media-xs {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &__header {
+        @include flex-column;
+
+        &__img-container {
+            border: solid rgb(88, 150, 254, 0.9) 8.5px;
+            border-radius: 50%;
+            position: relative;
+            z-index: 10;
+
+            &::before {
+                content: "";
+                width: 185px;
+                height: 185px;
+                background: $light-blue;
+                opacity: 0.6;
+                position: absolute;
+                z-index: -1;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+            }
+        }
+
+        &__title {
+            width: 852px;
+            margin: 44px 0 16px 0;
+            text-align: center;
+
+            @include media-m {
+                width: 100%;
+            }
+
+            @include media-s {
+                font-size: 40px;
+            }
+
+            @include media-xs {
+                font-size: 30px;
+            }
+        }
+
+        &__desc {
+            width: 775px;
+            margin-bottom: 56px;
+
+            @include media-m {
+                width: 100%;
+            }
+
+            @include media-s {
+                font-size: 12px;
+            }
+        }
+
+        &__icon {
+            font-size: 36px;
+            color: $blue-active;
+            position: absolute;
+            bottom: 32px;
+
+            @include media-s {
+                display: none;
+            }
+        }
+    }
+}

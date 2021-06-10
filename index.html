@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="header-wrapper container">
+        <header class="header-wrapper__header">
+            <button class="burger header-wrapper__burger"
+                onclick="this.classList.toggle('burger_opened');this.setAttribute('aria-expanded', this.classList.contains('burger_opened'))"
+                aria-label="Main Menu">
+                <svg width="120" height="60" viewBox="0 0 100 100">
+                    <path class="burger_line burger_line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="burger_line burger_line2" d="M 20,50 H 80" />
+                    <path class="burger_line burger_line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+            <div class="mob-nav header-wrapper__mob-nav menu-open">
+                <div class="mob-nav__menu-block">
+                    <a class="mob-nav__menu-block__link" href="#about-section" alt="About Me">About Me</a>
+                    <a class="mob-nav__menu-block__link" href="#services-section" alt="Services">Services</a>
+                    <a class="mob-nav__menu-block__link" href="#my-works-section" alt="My Works">My Works</a>
+                    <a class="mob-nav__menu-block__link" href="#clients-section" alt="Clients">Clients</a>
+                    <span class="mob-nav__menu-block__line"></span>
+                    <div class="mob-nav__menu-block__social-links">
+                        <a class="mob-nav__menu-block__social-links__link" href="#" alt="Facebook">
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <a class="mob-nav__menu-block__social-links__link" href="#" alt="Twitter">
+                            <i class="icon-twitter"></i>
+                        </a>
+                        <a class="mob-nav__menu-block__social-links__link" href="#" alt="Dribble">
+                            <i class="icon-dribble"></i>
+                        </a>
+                        <a class="mob-nav__menu-block__social-links__link" href="#" alt="Behance">
+                            <i class="icon-behance"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrapper__header__img-container">
+                <img src="img/header_profile-photo.png" alt="Profile Photo">
+            </div>
+            <h1 class="title header-wrapper__header__title">Free portfolio PSD template for graphic designers</h1>
+            <p class="desc header-wrapper__header__desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+            <button class="button header-wrapper__header__button">Hire Me</button>
+            <i class="header-wrapper__header__icon icon-arrow_down"></i>
+        </header>
+    </section>
+    <section class="about-wrapper container" id="#about-section">
+        <main class="about-wrapper__main">
+            <h3 class="title-black about-wrapper__main">About Me</h3>
+            <p class="text about-wrapper__main__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia
+            </p>
+        </main>
+    </section>
+    <section class="expert-in-wrapper container" id="#services-section">
+        <main class="expert-in-wrapper__main">
+            <h3 class="title-black expert-in-wrapper__main__title-black">Expert In</h3>
+            <div class="content-block expert-in-wrapper__main__content-block">
+                <div class="skill-block content-block__skill-block">
+                    <a class="skill-block__link" href="#" alt="Mobile Development">
+                        <i class="skill-block__link__icon icon-telephone"></i>
+                    </a>
+                    <a class="skill-block__title" href="#" alt="Mobile Development">Mobile Development</a>
+                    <p class="text skill-block__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                </div>
+                <div class="skill-block content-block__skill-block">
+                    <a class="skill-block__link" href="#" alt="Web Design">
+                        <i class="skill-block__link__icon icon-desktop"></i>
+                    </a>
+                    <a class="skill-block__title" href="#" alt="Web Design">Web Design</a>
+                    <p class="text skill-block__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                </div>
+                <div class="skill-block content-block__skill-block">
+                    <a class="skill-block__link" href="#" alt="Web Development">
+                        <i class="skill-block__link__icon icon-code"></i>
+                    </a>
+                    <a class="skill-block__title" href="#" alt="">Web Development</a>
+                    <p class="text skill-block__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                </div>
+                <div class="skill-block content-block__skill-block">
+                    <a class="skill-block__link" href="#" alt="Product Design">
+                        <i class="skill-block__link__icon icon-bag"></i>
+                    </a>
+                    <a class="skill-block__title" href="#" alt="Product Design">Product Design</a>
+                    <p class="text skill-block__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                </div>
+                <div class="skill-block content-block__skill-block">
+                    <a class="skill-block__link" href="#" alt="UX & UI">
+                        <i class="skill-block__link__icon icon-ui"></i>
+                    </a>
+                    <a class="skill-block__title" href="#" alt="UX & UI">UX & UI</a>
+                    <p class="text skill-block__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                </div>
+                <div class="skill-block content-block__skill-block">
+                    <a class="skill-block__link" href="#" alt="Animations">
+                        <i class="skill-block__link__icon icon-camera"></i>
+                    </a>
+                    <a class="skill-block__title" href="#" alt="Animations">Animations</a>
+                    <p class="text skill-block__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="latest-works-wrapper container" id="#my-works-section">
+        <main class="latest-works-wrapper__main">
+            <h3 class="title-black latest-works-wrapper__main__title-black">Latest Works</h3>
+            <div class="content-block latest-works-wrapper__main__content-block">
+                <a class="content-block__link" href="#" alt="Site Example">
+                    <img class="content-block__link__img" src="img/latest-works_img-1.png">
+                </a>
+                <a class="content-block__link" href="#" alt="Site Example">
+                    <img class="content-block__link__img" src="img/latest-works_img-2.png">
+                </a>
+                <a class="content-block__link" href="#" alt="Site Example">
+                    <img class="content-block__link__img" src="img/latest-works_img-3.png">
+                </a>
+                <a class="content-block__link" href="#" alt="Site Example">
+                    <img class="content-block__link__img" src="img/latest-works_img-4.png">
+                </a>
+                <a class="content-block__link" href="#" alt="Site Example">
+                    <img class="content-block__link__img" src="img/latest-works_img-5.png">
+                </a>
+                <a class="content-block__link" href="#" alt="Site Example">
+                    <img class="content-block__link__img" src="img/latest-works_img-6.png">
+                </a>
+            </div>
+        </main>
+    </section>
+    <section class="clients-wrapper container" id="#clients-section">
+        <article class="clients-wrapper__article">
+            <h3 class="title-black clients-wrapper__article__title-black">Clients</h3>
+            <div class="clients-wrapper__article__links-block">
+                <a class="clients-wrapper__article__links-block__link" href="#" alt="Microsoft">
+                    <img class="clients-wrapper__article__links-block__link__img" src="img/clients_img-1.png">
+                </a>
+                <a class="clients-wrapper__article__links-block__link" href="#" alt="Google">
+                    <img class="clients-wrapper__article__links-block__link__img" src="img/clients_img-2.png">
+                </a>
+                <a class="clients-wrapper__article__links-block__link" href="#" alt="SAMSUNG">
+                    <img class="clients-wrapper__article__links-block__link__img" src="img/clients_img-3.png">
+                </a>
+                <a class="clients-wrapper__article__links-block__link" href="#" alt="IBM">
+                    <img class="clients-wrapper__article__links-block__link__img" src="img/clients_img-4.png">
+                </a>
+            </div>
+        </article>
+    </section>
+    <section class="footer-wrapper container">
+        <footer class="footer-wrapper__footer">
+            <h5 class="title-white footer-wrapper__footer__title-white">
+                Need a graphic designer? <span class="title-white__span">Ready to work!</span>
+            </h5>
+            <button class="button footer-wrapper__footer__button">Hire Me</button>
+        </footer>
+    </section>
+    <script src="js/burger-script.js"></script>
+</body>
+
+</html>

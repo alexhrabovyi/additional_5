@@ -1,0 +1,44 @@
+.footer-wrapper {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    @include background-cover(url("../img/header_bg.png"));
+
+    &__footer {
+        @include flex-center-center;
+
+        @include media-l {
+            flex-direction: column;
+        }
+
+        &__title-white {
+            margin-right: 30px;
+
+            @include media-l {
+                margin-right: 0;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.title-white {
+    font-weight: 300;
+    font-size: 50px;
+    color: $white;
+
+    @include media-xl {
+        font-size: 40px;
+    }
+
+    &__span {
+        font-weight: 700;
+        font-size: 50px;
+        color: $white;
+
+        @include media-xl {
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+}

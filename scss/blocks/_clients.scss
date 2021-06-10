@@ -1,0 +1,43 @@
+.clients-wrapper {
+    background: $grey;
+    padding-top: 80px;
+    padding-bottom: 89px;
+    
+    &__article {
+        @include flex-column;
+
+        &__title-black {
+            margin-bottom: 64px;
+        }
+
+        &__links-block {
+            width: 100%;
+            @include flex-custom(row, space-around, center);
+            flex-wrap: wrap;
+
+            &__link {
+                margin-bottom: 25px;
+
+                @include media-m {
+                    margin-bottom: 30px;
+                }
+
+                @include media-xs {
+                    width: 100%;
+                    margin-bottom: 40px;
+                    @include flex-center;
+                }
+
+                &:hover, &:focus {
+                    outline: none;
+                    transform: scale(1.2);
+                    transition: all 0.1s ease-in;
+                }
+
+                &:active {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

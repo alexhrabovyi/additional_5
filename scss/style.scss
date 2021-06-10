@@ -1,0 +1,31 @@
+// properties for all elements
+
+.icon-facebook:before, .icon-arrow_down:before, .icon-ui:before, .icon-telephone:before, 
+.icon-code:before, .icon-desktop:before, .icon-bag:before, .icon-camera:before, 
+.icon-dribble:before, .icon-behance:before, .icon-twitter:before {
+    font-family: "icon-font";
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+// blocks
+
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/expert-in";
+@import "blocks/latest-works";
+@import "blocks/clients";
+@import "blocks/footer";
+@import "blocks/mob-nav";
+
+// libs
+
+@import "libs/normalize";
+@import "libs/fonts";
+@import "libs/mixins";
+@import "libs/colors";
